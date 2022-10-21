@@ -1,5 +1,5 @@
 import React from 'react';
-import Cartwidgeth from './Cartwidgdth';
+import Cartwidgeth from './Cartwidgeth';
 import '../estilos/Estilosnav.css';
 import '../estilos/Estilosbtn.css';
 export default function Navbar() {

@@ -5,6 +5,7 @@
   font-size: 2rem;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   background-color: brown;
 }
 .navbarestilos a {

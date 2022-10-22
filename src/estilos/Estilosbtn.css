@@ -2,3 +2,9 @@
   display: flex;
   flex-direction: row;
 }
+.btn-contacto {
+  background-color: blueviolet;
+}
+.btn-contacto:hoover {
+  transition: rgb(228, 105, 105) 0.5s;
+}

@@ -6,8 +6,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Itemlistcontainer />
-      <Itemlistcontainer />
+      <Itemlistcontainer greeting={'Bienvenidos a Cybertron'} />
       <Footer />
     </div>
   );

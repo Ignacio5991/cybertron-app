@@ -1,4 +1,8 @@
 .Titulos {
   margin-left: 30rem;
+  transition: yellow 5s;
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.Titulos:hover {
+  color: yellow 5s;
 }

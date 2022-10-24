@@ -3,8 +3,9 @@
   flex-direction: row;
 }
 .btn-contacto {
-  background-color: blueviolet;
+  color: blueviolet;
+  transition: all darkorange 5s;
 }
 .btn-contacto:hoover {
-  transition: rgb(228, 105, 105) 0.5s;
+  color: darkorange 5s;
 }

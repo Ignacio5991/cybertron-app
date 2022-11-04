@@ -1,11 +1,15 @@
 import { ClassNames } from '@emotion/react';
 import React from 'react';
-const Item = ({ info }) => {
+import { Link } from 'react-router-dom';
+const Item = ({ id, title, categoria, info }) => {
   return (
-    <a href="">
-      <img src={info.image} />
-      <p>{info.title}</p>;
-    </a>
+    <>
+      <Link to={'/Item/' + id}>
+        <img src={info.image} />
+      </Link>
+      <p>{title}</p>;<p>{categoria}</p>
+    </>
   );
 };
+
 export default Item;

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ItemDetail from './ItemDetail';
 import { perifericos } from '../data/data.js';
+import '../estilos/EstilosImagen.css';
 import Item from './Item';
 import { useParams } from 'react-router-dom';
 export const ItemDetailContainer = () => {

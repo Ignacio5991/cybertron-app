@@ -5,6 +5,7 @@ import ItemList from './ItemList';
 import { perifericos } from '../data/data.js';
 import { useParams } from 'react-router-dom';
 import Item from './Item';
+import { Grid } from '@mui/material';
 export default function Itemlistcontainer() {
   const [data, setData] = useState([]);
   const { idcategoria } = useParams();
@@ -22,13 +23,11 @@ export default function Itemlistcontainer() {
       }
     });
   }, [idcategoria]);
-  const onAdd = (quantity) => {
-    console.log(`compraste {$quantity} unidades`);
-  };
   return (
     <div>
-      <Itemcount initial={1} stock={4} onAdd={onAdd} />
-      <ItemList data={data} />
+      <Grid container justify="center">
+        <ItemList data={data} />
+      </Grid>
     </div>
   );
 }

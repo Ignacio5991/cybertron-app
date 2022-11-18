@@ -10,7 +10,6 @@ import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
 import { perifericos } from '../data/data';
 export default function MediaCard({ info }) {
-  const { addProduct } = useCartContext();
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia component="img" height="140" image={info.image} alt="image sample" />

@@ -1,11 +1,18 @@
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import '../estilos/Estilosbtn.css';
-export default function Cartwidgeth() {
+import { useCartContext } from '../CartContext';
+import { Link } from 'react-router-dom';
+export const Cartwidgeth = () => {
+  const { TotalProducts } = useCartContext();
   return (
     <>
-      <button className="btn-carrito">
-        <ShoppingCartIcon />
-      </button>
+      <Link to="/cart">
+        <button className="btn-carrito">
+          <ShoppingCartIcon />
+          <span>{TotalProducts() || ''}</span>
+        </button>
+      </Link>
     </>
   );
-}
+};
+export default Cartwidgeth;

@@ -8,7 +8,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
-import { perifericos } from '../data/data';
+
 export default function MediaCard({ info }) {
   return (
     <Card sx={{ maxWidth: 345 }}>

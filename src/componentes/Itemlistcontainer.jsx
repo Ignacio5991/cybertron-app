@@ -2,26 +2,23 @@ import React, { useState, useEffect } from 'react';
 import '../estilos/EstilosTitulos.css';
 import Itemcount from './Itemcount';
 import ItemList from './ItemList';
-import { perifericos } from '../data/data.js';
+
 import { useParams } from 'react-router-dom';
 import Item from './Item';
+import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore';
 import { Grid } from '@mui/material';
 export default function Itemlistcontainer() {
   const [data, setData] = useState([]);
   const { idcategoria } = useParams();
   useEffect(() => {
-    const getdata = new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(perifericos);
-      }, 2000);
-    });
-    getdata.then((res) => {
-      if (idcategoria) {
-        setData(res.filter((Item) => Item.categoria == idcategoria));
-      } else {
-        setData(res);
-      }
-    });
+    const db = getFirestore();
+    const Collection1 = collection(db, 'productos');
+    if (idcategoria) {
+      const Filter = query(Collection1, where('categoria', '==', idcategoria));
+      getDocs(Filter).then((res) => setData(res.docs.map((producto) => ({ id: producto.id, ...producto.data() }))));
+    } else {
+      getDocs(Collection1).then((res) => setData(res.docs.map((producto) => ({ id: producto.id, ...producto.data() }))));
+    }
   }, [idcategoria]);
   return (
     <div>

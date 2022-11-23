@@ -8,6 +8,7 @@ import Nosotros from './componentes/Nosotros';
 import CartProvider from './CartContext';
 import Cartwidgeth from './componentes/Cartwidgeth';
 import Cart from './componentes/Cart';
+import Chekout from './componentes/Chekout';
 function App() {
   return (
     <div>
@@ -19,6 +20,7 @@ function App() {
             <Route path="/Item/:iditem" element={<ItemDetailContainer />} />
             <Route path="/Nosotros" element={<Nosotros />} />
             <Route path="/categoria/:idcategoria" element={<Itemlistcontainer />} />
+            <Route path="/chekout" element={<Chekout />} />
             <Route path="/cart" element={<Cart />} />
           </Routes>
         </CartProvider>

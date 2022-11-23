@@ -27,6 +27,9 @@ export default function Navbar() {
           <Link to={'/categoria/Gabinetes'}>Gabinetes</Link>
         </li>
         <li>
+          <Link to={'/chekout'}>Chekout</Link>
+        </li>
+        <li>
           <Cartwidgeth />
         </li>
       </ul>

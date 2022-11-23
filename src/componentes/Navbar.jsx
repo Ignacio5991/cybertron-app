@@ -18,7 +18,13 @@ export default function Navbar() {
           <Link to={'/categoria/Hardware'}>Hardware</Link>
         </li>
         <li>
-          <Link to={'/categoria/Teclados'}>Teclados</Link>
+          <Link to={'/categoria/Perifericos'}>Perifericos</Link>
+        </li>
+        <li>
+          <Link to={'/categoria/Alimentacion'}>Alimentacion</Link>
+        </li>
+        <li>
+          <Link to={'/categoria/Gabinetes'}>Gabinetes</Link>
         </li>
         <li>
           <Cartwidgeth />

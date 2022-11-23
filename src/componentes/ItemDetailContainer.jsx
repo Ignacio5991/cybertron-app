@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ItemDetail from './ItemDetail';
-
 import '../estilos/EstilosImagen.css';
 import { getFirestore, doc, getDoc } from 'firebase/firestore';
-import Item from './Item';
 import { useParams } from 'react-router-dom';
 export const ItemDetailContainer = () => {
   const [data, setData] = useState({});

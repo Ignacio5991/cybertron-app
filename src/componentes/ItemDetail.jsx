@@ -18,7 +18,7 @@ export const ItemDetail = ({ data }) => {
     <div>
       <h1>Mas informacion</h1>
       <Card sx={{ maxWidth: 345 }}>
-        <CardMedia component="img" height="140" image={data.image} alt="image sample" />
+        <CardMedia component="img" height="140" image={data.img} alt="image sample" />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {data.title}

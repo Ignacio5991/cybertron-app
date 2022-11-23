@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../estilos/EstilosTitulos.css';
-import Itemcount from './Itemcount';
 import ItemList from './ItemList';
-
 import { useParams } from 'react-router-dom';
-import Item from './Item';
 import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore';
 import { Grid } from '@mui/material';
 export default function Itemlistcontainer() {

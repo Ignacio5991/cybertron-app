@@ -8,11 +8,11 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
-
 export default function MediaCard({ info }) {
+  console.log(info);
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardMedia component="img" height="140" image={info.image} alt="image sample" />
+      <CardMedia component="img" height="140" image={info.img} alt="image sample" />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {info.title}

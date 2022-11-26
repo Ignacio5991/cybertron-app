@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../estilos/Estilosbtn.css';
 export const Itemcount = ({ initial, stock, onAdd }) => {
   const [count, setCount] = useState(initial);
   const decrease = () => {

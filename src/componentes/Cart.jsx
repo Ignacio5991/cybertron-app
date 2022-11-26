@@ -5,8 +5,12 @@ import { Link } from 'react-router-dom';
 
 const Cart = () => {
   const { cart, TotalPrice } = useCartContext();
-  if (Cart.length === 0) {
-    return <>No hay elementos en el carrito. Que estas esperando para comprar</>;
+  if (cart.length === 0) {
+    return (
+      <>
+        <p>No hay elementos en el carrito. Que estas esperando para comprar</p>
+      </>
+    );
   }
   return (
     <div>

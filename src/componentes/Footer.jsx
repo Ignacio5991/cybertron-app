@@ -4,11 +4,11 @@ import '../estilos/Estilosbtn.css';
 import '../estilos/EstilosFooter.css';
 export default function Footer() {
   return (
-    <div>
+    <div className="estiloFooter">
       <button className="btn-contacto">
         <WhatsAppIcon />
       </button>
-      <p>Cybertrongaming Marca registrada</p>
+      <p className="textoFooter">Cybertrongaming Marca registrada</p>
     </div>
   );
 }

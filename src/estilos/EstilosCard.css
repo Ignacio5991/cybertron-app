@@ -1,0 +1,13 @@
+.estiloCard {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.estiloCardInfo {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.cardDetail {
+  margin-left: 35%;
+}

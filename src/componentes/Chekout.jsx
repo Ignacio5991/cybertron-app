@@ -3,10 +3,10 @@ import React, { useState, useContext } from 'react';
 import { addDoc, collection, getFirestore } from 'firebase/firestore';
 export default function Chekout() {
   const { Totalprice, cart } = useContext;
-  const { name, setName } = useState('');
-  const { email, setEmail } = useState('');
-  const { tel, setTel } = useState('');
-  const { orderId, setOrderId } = useState('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [tel, setTel] = useState('');
+  const [orderId, setOrderId] = useState('');
   function terminarCompra() {
     const factura = {
       comprador: { name, email, tel },

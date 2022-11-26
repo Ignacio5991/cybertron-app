@@ -6,5 +6,10 @@
 .Titulos:hover {
   color: yellow 5s;
 }
-.tiTulo {
+.datosComprador {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 300;
+  font-family: sans-serif;
+  color: gold;
 }

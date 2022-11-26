@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Nosotros from './componentes/Nosotros';
 import CartProvider from './CartContext';
 import Cartwidgeth from './componentes/Cartwidgeth';
+import { PacmanLoader } from 'react-spinners';
 import Cart from './componentes/Cart';
 import Chekout from './componentes/Chekout';
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="/chekout" element={<Chekout />} />
             <Route path="/cart" element={<Cart />} />
           </Routes>
+          <PacmanLoader color="rgb(128, 36,123  )" />
         </CartProvider>
         <Footer />
       </BrowserRouter>

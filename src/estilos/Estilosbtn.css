@@ -12,3 +12,8 @@
 .counter {
   margin-left: 45%;
 }
+.pEdido {
+  background-color: rgb(128, 36, 123);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}

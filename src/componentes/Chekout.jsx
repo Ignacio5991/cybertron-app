@@ -1,16 +1,19 @@
-import React, { useState, useContext } from 'react';
-
+import React, { useState } from 'react';
+import '../estilos/EstilosTitulos.css';
+import '../estilos/EstilosCheckout.css';
+import '../estilos/Estilosbtn.css';
+import { useCartContext } from '../CartContext';
 import { addDoc, collection, getFirestore } from 'firebase/firestore';
 export default function Chekout() {
-  const { Totalprice, cart } = useContext;
+  const { TotalPrice, cart } = useCartContext();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [tel, setTel] = useState('');
   const [orderId, setOrderId] = useState('');
   function terminarCompra() {
-    const factura = {
+    let factura = {
       comprador: { name, email, tel },
-      Totalprice,
+      total: TotalPrice(),
       cart,
     };
     const db = getFirestore();
@@ -19,19 +22,21 @@ export default function Chekout() {
       setOrderId(id);
     });
   }
-
+  console.log(name, email, tel);
   return (
     <>
       {orderId ? 'Gracias por elegirnos. Tu id de compra es:' + orderId : ''}
-      <div>
-        <h1>Ingrese los datos para procesar la compra</h1>
+      <div className="fOrm">
+        <h1 className="datosComprador">Ingrese los datos para procesar la compra</h1>
         <input type="text" placeholder="name" onChange={(e) => setName(e.target.value)} />
         <br></br>
         <input type="tel" placeholder="tel" onChange={(e) => setEmail(e.target.value)} />
         <br></br>
         <input type="email" placholder="email" onChange={(e) => setTel(e.target.value)} />
         <br></br>
-        <button onClick={terminarCompra}>Enviar Pedido</button>
+        <button className="pEdido" onClick={terminarCompra}>
+          Enviar Pedido
+        </button>
       </div>
     </>
   );

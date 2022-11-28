@@ -1,6 +1,7 @@
 import React from 'react';
 import { useCartContext } from '../CartContext';
 import ItemCart from './ItemCart';
+import '../estilos/EstilosCart.css';
 import { Link } from 'react-router-dom';
 
 const Cart = () => {
@@ -8,7 +9,7 @@ const Cart = () => {
   if (cart.length === 0) {
     return (
       <>
-        <p>No hay elementos en el carrito. Que estas esperando para comprar</p>
+        <p className="menSajecarrito">No hay elementos en el carrito. Que estas esperando para comprar</p>
       </>
     );
   }

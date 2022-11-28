@@ -2,13 +2,6 @@
   display: flex;
   flex-direction: row;
 }
-.btn-contacto {
-  color: blueviolet;
-  transition: all darkorange 5s;
-}
-.btn-contacto:hoover {
-  color: darkorange 5s;
-}
 .counter {
   margin-left: 45%;
 }

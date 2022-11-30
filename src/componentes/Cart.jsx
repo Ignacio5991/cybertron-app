@@ -10,7 +10,9 @@ const Cart = () => {
     return (
       <>
         <p className="menSajecarrito">No hay elementos en el carrito. Que estas esperando para comprar</p>
-        <Link to="/">Haz click aqui para ver nuestros productos</Link>
+        <Link to="/">
+          <p className="linkTienda"> Haz click aqui para ver nuestros productos</p>
+        </Link>
       </>
     );
   }

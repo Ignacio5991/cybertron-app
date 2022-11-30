@@ -1,6 +1,4 @@
-import { ClassNames } from '@emotion/react';
-import React, { useContext } from 'react';
-import { useCartContext } from '../../src/CartContext';
+import React from 'react';
 import '../estilos/EstilosCard.css';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -12,7 +10,7 @@ import { Link } from 'react-router-dom';
 export default function MediaCard({ info }) {
   console.log(info);
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card className="card" sx={{ maxWidth: 345 }}>
       <CardMedia className="estiloCard" component="img" image={info.img} alt="image sample" />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">

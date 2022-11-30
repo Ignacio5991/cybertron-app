@@ -1,17 +1,9 @@
-.Titulos {
-  margin-left: 30rem;
-  transition: yellow 5s;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.Titulos:hover {
-  color: yellow 5s;
-}
 .datosComprador {
   text-align: center;
   font-size: 60px;
   font-weight: 300;
   font-family: sans-serif;
-  color: gold;
+  color: black;
 }
 .tiTulo {
   text-align: center;

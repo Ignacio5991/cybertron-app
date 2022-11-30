@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+# TITULO
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Cybertron app
 
-## Available Scripts
+# BREVE DESCRIPCION DE LA app
 
-In the project directory, you can run:
+La presente aplicación es una representación de un ecomerce, prácticamente funcional en su totalidad.
+En la misma es posible agregar productos al carrito, quitarlos selectivamente o vaciarlo en su totalidad. También es posible completar un formulario de chekout para realizar el trámite de compra, el cual está validado 100% y nos devuelve un código de seguimiento.
+Los productos presentes en dicha aplicación, presentan una breve descripción para facilitar su compra.
 
-### `npm start`
+# Modo de instalacion.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Para poder acceder a la app ademas de tenes instalado un editor de codigo como pueda ser Visual Estudio Code, se debera descargar el repositorio de github e intalar la libreria de react.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# LIBRERIAS UTILIZADAS
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+En el proycto se utilizaron las siguientes librerias:
+1- Material ui, decidi utilizar esta libreria ya que era una nueva libreria y queria experimentar con la misma y ver las nuevas herramientas que podia brindarme y para ganar mas experiencia.
+2- React Spinners/Storybook esta libreria fue utilizada para implementar un spinner de loading un poco mas original que los que me brinda material ui, su documentacion me costo entenderla un poco al principio pero tiene muy buen material y me gusto el desafio de aprender algo nuevo por mi cuenta.
+3- Sweetalert2 libreria ya utilizada en Js pero que nuevamente me ayudo a la hora de validar el formulario de compra ya que due la forma que enconrtre de avisarle al usuario de que la compra se realizo con exito o de que presenta algun error o campo incompleto a la hora de finalizar la compra.

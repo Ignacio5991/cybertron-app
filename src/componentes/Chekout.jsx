@@ -41,7 +41,7 @@ export default function Chekout() {
   }
 
   const order = {
-    buyer: {
+    comprador: {
       name,
       email,
       tel,
@@ -57,13 +57,13 @@ export default function Chekout() {
 
   const terminarCompra = () => {
     const db = getFirestore();
-    const ordersCollection = collection(db, 'pedidos');
+    const pedidosCollection = collection(db, 'pedidos');
 
     if (TotalPrice() == 0) {
       swal({
         title: 'Empty cart',
         icon: 'info',
-        text: 'Go to  PRODUCTS  to continue viewing our products',
+        text: 'Vaya a la seccion  Productos para ver nuestro catalogo',
       });
       return;
     }
@@ -85,7 +85,7 @@ export default function Chekout() {
     if (validarTelefono(tel) == false) {
       return;
     }
-    addDoc(ordersCollection, order).then(
+    addDoc(pedidosCollection, order).then(
       ({ id }) =>
         swal.fire({
           icon: 'success',
